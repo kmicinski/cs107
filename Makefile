@@ -1,8 +1,3 @@
-test:
-	mv _config.yml _config.yml.tmp
-	cp _testconfig.yml _config.yml
-	jekyll serve
-
 deploy:
 	mv _config.yml _config.yml.tmp
 	cp _buildconfig.yml _config.yml
@@ -15,4 +10,4 @@ deploy:
 	git push origin master
 	mv _config.yml.tmp _config.yml
 
-.PHONY: deploy test
+.PHONY: deploy
