@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h3><b style="color:red">Due</b> date: <time datetime="{{ page.due | date_to_xmlschema }}">{{ page.due | date: "%b %-d, %Y" }} (6PM)</time></h3>
+  </header>
+
+  <div class="post-content writeup-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

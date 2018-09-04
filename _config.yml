@@ -1,0 +1,19 @@
+# Site settings
+title: "CS107"
+baseurl: ""
+url: localhost:4000
+description: "CS107"
+permalink: pretty
+email: "kris@cs.haverford.edu"
+
+# Build settings
+#markdown: redcarpet
+
+# Build posts to appear in the future
+future: true
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
