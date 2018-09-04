@@ -1,3 +1,1 @@
-# Kristopher Micinski's personal website
-
-Kristopher Micinski's personal (research oriented) website.
+CS107, Fall 2018
