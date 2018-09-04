@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Computer Security</title>
+  <meta name="description" content="Computer Security: Attacks and Defenses (CMSC311 at Haverford College).">
+
+  <link rel="stylesheet" href="http://kmicinski.com/cs107/css/main.css">
+  <link rel="canonical" href="http://kmicinski.com/cs107/project/">
+  <link rel="alternate" type="application/rss+xml" title="Computer Security" href="http://kmicinski.com/cs107/feed.xml">
+</head>
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href=http://kmicinski.com//cs107/>Computer Security</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs107/assignments/">Assignments</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs107/blog/">Posts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs107/resources">Resources</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs107/schedule/">Schedule</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs107/syllabus/">Syllabus</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"></h1>
+    <h3><b>Project due date: <time datetime=""> (5:59PM Eastern)</time></b></h3>
+  </header>
+
+  <div class="post-content writeup-content" itemprop="articleBody">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"></h1>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <article class="post">
+
+  <div class="post-content">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"></h1>
+    <p class="post-meta">Lab date: <time datetime=""></time></p>
+  </header>
+
+  <div class="post-content writeup-content" itemprop="articleBody">
+    <h2 id="upcoming-deadlines">Upcoming deadlines</h2>
+
+<ul class="due-list">
+
+    
+    
+    
+    <li>
+       <span><span class="post-meta"><b>(Due <span itemprop="date">Sep 10, 2018</span>)</b></span><a class="mainpage-asn-link" href="http://kmicinski.com//cs107/labs/1">Lab 1: Using the Command Line</a></span></li>
+   
+
+</ul>
+
+<h2 id="information">Information</h2>
+
+<div class="infomatter">
+<table class="infotablestyle">
+<tr><td>Course Number</td>
+    <td>CMSC 107 (Fall 2018) at <a href="https://www.haverford.edu/computer-science/">Haverford College</a></td>
+</tr>
+<tr><td>Instructor</td>
+    <td><a href="http://kmicinski.com">Kristopher Micinski</a></td>
+</tr>
+<tr>
+    <td>Times</td>
+    <td>Tu/Thur 11:30-13:00 <i>Lecture</i>  W 11:30 / 12:30 <i>Labs</i></td>
+</tr>
+<tr>
+    <td>Office Hours</td>
+    <td>Tu/Thur after class and by appointment</td>
+</tr>
+</table>
+<img class="krispic" src="/assets/img/krisbw.jpg" />
+</div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This course is an accelerated introduction to computer science,
+covering the same material as both CS105 and CS106 at <a href="https://www.haverford.edu/computer-science/">Haverford
+College</a>. We have two
+broad goals. The first is to become thoughtful programmers who can
+articulate the methodology behind the design of our code. The second
+is to use those principles to help us understand the core
+data-structures that underlie the design of robust, efficient
+systems. We will do both of these by writing a good amount of code,
+but also thinking hard about how we can be sure we got it right.</p>
+
+<p>Code is the vocabulary through which we articulate computation. We
+need to learn how to write it well. This takes a lot of time, a lot of
+getting it wrong, and a lot of figuring out what we can do
+better. We’ll spend the fist half of the semester learning Python,
+learning the core features and building up to some ambitious projects
+along the way.</p>
+
+<p>Along with the basic vocabulary given to us by the programming
+language (e.g., the syntax), designing <em>good</em> programs requires
+utilizing robust, efficient abstractions for the data on which these
+programs operate. For example, think about how we might represent a
+phone book. We might implement the phone book as a large unordered
+list of pairs (of names and numbers). But that wouldn’t be very
+efficient: searching for a phone number would require combing through
+the list person-by-person. Instead, we might use a dictionary: an
+efficient way of representing keys (names, in this case) and their
+corresponding values (phone numbers). Of course, there are a variety
+of different ways we could envision implementing a dictionary. In
+practice, we probably won’t be writing this implementation ourselves
+(since someone’s likely done that for us), but we need to understand
+the implementation trade-offs to pick an implementation that best
+suits the system <em>we</em> want to build.</p>
+
+<p>So rather than just gain superficial knowledge of different data
+structures, we’re going to implement them ourselves. We do this for a
+few reasons. First, implementing data-structures correctly is hard and
+error-prone, and will hopefully force you into so much frustration
+that you have to sit back and think hard about how the pieces fit
+together. When you get it right, you’ll understand the essence of
+programming: tackling a conceptual problem and articulating a solution
+as an algorithm implemented in code. Second, you’re going to need to
+write a <em>lot</em> of code to become a good programmer. This course isn’t
+going to be enough to do that, but our goal is to get you on a path so
+that you can continue in subsequent courses, internships, and your own
+projects.</p>
+
+<p>Last, we want to write <em>good</em> code. We don’t want to hack something
+together, tinkering with it until it appears to work. We want to
+present a principled argument behind why our code is correct. So
+first, we’re going to write a ton of tests (we’ll study in the course
+what makes a <em>good</em> test). Next, we’re going to learn how to use
+formal reasoning to talk precisely about our code. But beyond these
+technical things, we’re going to talk to each other about our
+code—and have some frank discussions about what we should be doing
+better.</p>
+
+<p>I hope you’re excited for the course as I am!</p>
+
+<h2 id="course-structure">Course Structure</h2>
+
+<p>Please read the <a href="http://kmicinski.com//cs107/syllabus">Syllabus</a> for course information.</p>
+
+  </div>
+
+</article>
+
+  </div>
+
+</article>
+
+  </div>
+
+</article>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Computer Security</h2> -->
+  </div>
+
+</footer>
+
+<script src=http://kmicinski.com//cs107/bower_components/jquery/dist/jquery.min.js></script>
+<script src=http://kmicinski.com//cs107/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js></script>
+
+
+  </body>
+
+</html>
