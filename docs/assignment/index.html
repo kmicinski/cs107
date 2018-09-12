@@ -90,12 +90,35 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Project 2: Design By Cases; Preconditions and Postconditions</h1>
-    <h3><b style="color:red">Due</b> date: <time datetime="2018-09-19T00:00:00-04:00">Sep 19, 2018 (6PM)</time></h3>
+    <h1 class="post-title" itemprop="name headline">Call Trees Practice</h1>
   </header>
 
-  <div class="post-content writeup-content" itemprop="articleBody">
-    <p><a href="https://docs.google.com/document/d/1VmIfHhFT31G9G9DeZCJe5nlD9AT5gP79t_LwNodsrK0/edit?usp=sharing">Link to project two</a></p>
+  <div class="post-content" itemprop="articleBody">
+    <p>Consider the following Python functions</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def foo(x):
+    if (x == 1 or x == 2):
+        return x
+    else:
+        return x * foo(x/2)
+
+def slice(l,start,end):
+    return l[start:end]
+
+def f(x):
+    if (len(x) == 1) return x[0]
+    elif (len (x) % 2 == 1): return f(slice(l, len(l)/2, len(l)))
+    else: return f(slice(l,0,len(l)/2))
+</code></pre></div></div>
+
+<p>Draw call trees for the following calls:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">foo(1)</code></li>
+  <li><code class="highlighter-rouge">foo(10)</code></li>
+  <li><code class="highlighter-rouge">f([1,2,3,4,5,6])</code></li>
+</ul>
+
 
   </div>
 
