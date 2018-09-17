@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts</title>
-  <meta name="description" content="Computer Security: Attacks and Defenses (CMSC311 at Haverford College).">
+  <title>Call Trees Practice</title>
+  <meta name="description" content="Consider the following Python functions">
 
   <link rel="stylesheet" href="http://kmicinski.com/cs107/css/main.css">
-  <link rel="canonical" href="http://kmicinski.com/cs107/blog/">
+  <link rel="canonical" href="http://kmicinski.com/cs107/lectures/call-trees-practice">
   <link rel="alternate" type="application/rss+xml" title="CS 107" href="http://kmicinski.com/cs107/feed.xml">
 </head>
 
@@ -79,48 +79,38 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="post-content">
-    <div class="home">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Call Trees Practice</h1>
+  </header>
 
-  <h2 class="page-heading">Posts</h2>
+  <div class="post-content" itemprop="articleBody">
+    <p>Consider the following Python functions</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Posted Sep 13, 2018 </span></span>
-        <h3>
-          <a class="post-link" href="http://kmicinski.com//cs107/lectures/call-trees-practice">Call Trees Practice</a>
-        </h3>
-      </li>
-    
-      <li>
-        <span class="post-meta">Posted Sep 12, 2018 </span></span>
-        <h3>
-          <a class="post-link" href="http://kmicinski.com//cs107/labs/2">Project 2: Design By Cases; Preconditions and Postconditions</a>
-        </h3>
-      </li>
-    
-      <li>
-        <span class="post-meta">Posted Sep 10, 2018 </span></span>
-        <h3>
-          <a class="post-link" href="http://kmicinski.com//cs107/labs/1">Project 1: Algorithms and Python Functions</a>
-        </h3>
-      </li>
-    
-      <li>
-        <span class="post-meta">Posted Sep 5, 2018 </span></span>
-        <h3>
-          <a class="post-link" href="http://kmicinski.com//cs107/labs/0">Lab 0: Using the Command Line</a>
-        </h3>
-      </li>
-    
-  </ul>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def foo(x):
+    if (x == 1 or x == 2):
+        return x
+    else:
+        return x * foo(x/2)
 
-  <p class="rss-subscribe">subscribe <a href="http://kmicinski.com//cs107/feed.xml">via RSS</a></p>
+def slice(l,start,end):
+    return l[start:end]
 
-</div>
+def f(x):
+    if (len(x) == 1) return x[0]
+    elif (len (x) % 2 == 1): return f(slice(l, len(l)/2, len(l)))
+    else: return f(slice(l,0,len(l)/2))
+</code></pre></div></div>
+
+<p>Draw call trees for the following calls:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">foo(1)</code></li>
+  <li><code class="highlighter-rouge">foo(10)</code></li>
+  <li><code class="highlighter-rouge">f([1,2,3,4,5,6])</code></li>
+</ul>
+
 
   </div>
 
