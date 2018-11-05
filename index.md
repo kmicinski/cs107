@@ -25,13 +25,33 @@ layout: mainpage
 <tr><td>Instructor</td>
     <td><a href="http://kmicinski.com">Kristopher Micinski</a></td>
 </tr>
+<tr><td>Lab Instructor</td>
+    <td><a href="https://www.haverford.edu/users/shlindel">Suzanne Lindell</a></td>
+</tr>
+<tr><td>TAs</td>
+    <td><a href="mailto:slowenstei@haverford.edu">Sam Lowenstein</a>, <a href="mailto:dfeshbach@haverford.edu">Daniel Feshbach</a>, <a href="hmohr@haverford.edu">Henry Mohr</a></td>
+</tr>
 <tr>
     <td>Times</td>
-    <td>Tu/Thur 11:30-13:00 <i>Lecture</i>  W 11:30 / 12:30 <i>Labs</i></td>
+    <td>Tu/Thur 10:00-11:30 <i>Lecture</i>  Wednesday <i>Labs</i></td>
 </tr>
 <tr>
     <td>Office Hours</td>
-    <td>Tu/Thur after class and by appointment</td>
+    <td>(L303) Tu 11:30-12:15, We 1:30-2:30, and by appointment</td>
+</tr>
+<tr>
+    <td>(Suzanne)</td>
+    <td>Fr: 12:30 - 2:00PM (H110)</td>
+</tr>
+<tr>
+    <td>(Daniel)</td>
+    <td> Monday: 4:00 - 6:00PM (H110)</td>
+</tr>
+    <td>(Sam)</td>
+    <td>Tuesday: 8:00 - 10:00PM (H110)</td>
+<tr>
+    <td>(Henry)</td>
+    <td>Thursday: 4:00 - 6:00PM (H110)</td>
 </tr>
 </table>
 <img class="krispic" src="/assets/img/krisbw.jpg">
@@ -95,7 +115,7 @@ technical things, we're going to talk to each other about our
 code---and have some frank discussions about what we should be doing
 better.
 
-I hope you're excited for the course as I am!
+I hope you're as excited for the course as I am!
 
 ## Course Structure
 
