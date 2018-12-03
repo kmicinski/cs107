@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Project 1: Algorithms and Python Functions</title>
-  <meta name="description" content="Link to first lab assignment">
+  <title>Lab 1: Using the Command Line</title>
+  <meta name="description" content="As a student of computing, you’re going to have to spend a lot of timeusing computers. Computers have great interfaces these days, butprogrammers still spend...">
 
   <link rel="stylesheet" href="http://kmicinski.com/cs107/css/main.css">
   <link rel="canonical" href="http://kmicinski.com/cs107/labs/1">
-  <link rel="alternate" type="application/rss+xml" title="CS 107" href="http://kmicinski.com/cs107/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Computer Security" href="http://kmicinski.com/cs107/feed.xml">
 </head>
 
   <body>
@@ -19,7 +19,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href=http://kmicinski.com//cs107/>CS 107</a>
+    <a class="site-title" href=http://kmicinski.com//cs107/>Computer Security</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -82,12 +82,130 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Project 1: Algorithms and Python Functions</h1>
-    <h3><b style="color:red">Due</b> date: <time datetime="2018-09-13T00:00:00-05:00">Sep 13, 2018 (6PM)</time></h3>
+    <h1 class="post-title" itemprop="name headline">Lab 1: Using the Command Line</h1>
+    <h3><b style="color:red">Due</b> date: <time datetime="2018-09-10T00:00:00-04:00">Sep 10, 2018 (6PM)</time></h3>
   </header>
 
   <div class="post-content writeup-content" itemprop="articleBody">
-    <p><a href="https://docs.google.com/document/d/1TmVrOju_OjOQYKv6q5eU3FDj56cHLJiuuP9BxA7kfmM/edit?usp=sharing">Link to first lab assignment</a></p>
+    <p>As a student of computing, you’re going to have to spend a lot of time
+using computers. Computers have great interfaces these days, but
+programmers still spend a surprising amount of time interacting with
+text-based interfaces to their machines.</p>
+
+<p>In this lab, I’d like you to play around with the command line a
+bit. First, I’d like you to read <a href="https://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything">the following
+guide</a>. Read
+it up until (but not including) the section on “Looping Over a Set of
+Files.”</p>
+
+<h3 id="lab-assignment">Lab Assignment</h3>
+
+<ul>
+  <li>
+    <p>Open a web browser with an email addressed to me, titled <code class="highlighter-rouge">&lt;your
+name&gt;'s Lab 1</code>. Start filling out the questions as I ask you to do
+them.</p>
+  </li>
+  <li>
+    <p>Start inside your home directory (if you are not there, type <code class="highlighter-rouge">cd ~</code>,
+the perhaps-confusing name <code class="highlighter-rouge">~</code> is an alias to your home directory).</p>
+  </li>
+  <li>
+    <p>Create a directory <code class="highlighter-rouge">lab1</code> via <code class="highlighter-rouge">mkdir lab1</code></p>
+  </li>
+  <li>
+    <p>Navigate into that directory <code class="highlighter-rouge">cd lab1</code></p>
+  </li>
+  <li>The command <code class="highlighter-rouge">touch &lt;filename&gt;</code> “touches” a file. Every file has a
+“timestamp” showing when it was create, modified, etc.. Touching a
+file updates this timestamp. If the file does not yet exist, `touch
+    <filename>` creates an empty file of the specified name.
+
+</filename>
+  </li>
+  <li>
+    <p>Run <code class="highlighter-rouge">touch hello</code>.</p>
+  </li>
+  <li>
+    <p>Now run <code class="highlighter-rouge">stat hello</code>. This asks the computer to tell you some
+statistics about the file, including its size, when it was created,
+etc..</p>
+  </li>
+  <li>
+    <p>Copy and paste the output of the command in your email to me.</p>
+  </li>
+  <li>
+    <p>Google a little bit about how stat works. Figure out how to make it
+print the time the file was last modified.</p>
+  </li>
+  <li>
+    <p>Now run <code class="highlighter-rouge">touch hello</code> again, followed by <code class="highlighter-rouge">stat hello</code>. What changed?
+And why?</p>
+  </li>
+  <li>
+    <p>Open any editor on your computer and create a file named <code class="highlighter-rouge">text.txt</code>
+inside of the <code class="highlighter-rouge">lab1</code> folder. Put a few lines of text in the file,
+really anything you want. This can be any editor: GEdit if you’re on
+linux, TextEdit if you’re on mac, or <code class="highlighter-rouge">nano</code>, <code class="highlighter-rouge">emacs</code>, or <code class="highlighter-rouge">vim</code> if
+you’re used to using one of those.</p>
+  </li>
+  <li>
+    <p>Now type <code class="highlighter-rouge">cat text.txt</code>, which shows the contents of the file.</p>
+  </li>
+  <li>
+    <p>Now type <code class="highlighter-rouge">cat text.txt text.txt</code>. <code class="highlighter-rouge">cat</code> accepts multiple arguments.</p>
+  </li>
+  <li>
+    <p>Now type <code class="highlighter-rouge">cat &gt;text.txt</code>. Be prepared: the command won’t
+terminate. It will allow you to keep typing until you type the
+character to stop typing (Control-D on most machines) and kill the
+program, and will write that into the file.</p>
+  </li>
+  <li>
+    <p>Type a few lines, and then hit Control-D.</p>
+  </li>
+  <li>
+    <p>Now cat the file again.</p>
+  </li>
+  <li>
+    <p>Copy the file <code class="highlighter-rouge">text.txt</code> to the parent directory: <code class="highlighter-rouge">cp text.txt ..</code>
+(equivalently, you could have done <code class="highlighter-rouge">cp text.txt ../text.txt</code>).</p>
+  </li>
+  <li>
+    <p>Now–without changing the directory–use cat to print the file to
+the screen. Tell me what command you used to do that.</p>
+  </li>
+  <li>
+    <p>Now change the directory to the parent directory: <code class="highlighter-rouge">cd ..</code>.</p>
+  </li>
+  <li>
+    <p>This should be your home directory. Print the working directory by
+using the <code class="highlighter-rouge">pwd</code> command (print working directory).</p>
+  </li>
+  <li>
+    <p>Now remove the folder and the file: <code class="highlighter-rouge">rm -r -i lab1</code>. Note that the
+<code class="highlighter-rouge">-r</code> option means “recursive” (i.e., delete directories, not just
+files), and the <code class="highlighter-rouge">-i</code> option means “interactive” (i.e., ask before
+deleting any files). If you want, you could have typed in <code class="highlighter-rouge">rm -ri
+lab1</code>. Often, when there are multiple flags you can pass to
+programs, you can pass multiple at once by simply putting them
+together (this is not always true, but it is for “core utilies” like
+<code class="highlighter-rouge">rm</code>).</p>
+  </li>
+  <li>
+    <p>Now also remove the copied <code class="highlighter-rouge">text.txt</code> by doing <code class="highlighter-rouge">rm text.txt</code>.</p>
+  </li>
+  <li>To complete your email to me, answer the following questions:
+    <ul>
+      <li>What scares you the most about using the command line?</li>
+      <li>Name the most interesting / useful thing you learned in this lab</li>
+      <li>Is there any situation in which you’d rather use the command line
+rather than a visual user-interface?</li>
+    </ul>
+  </li>
+  <li>Send your email to me and I’ll put you down with a 100% within a
+week.</li>
+</ul>
 
   </div>
 
@@ -100,7 +218,7 @@
 
   <div class="wrapper">
 
-    <!-- <h2 class="footer-heading">CS 107</h2> -->
+    <!-- <h2 class="footer-heading">Computer Security</h2> -->
   </div>
 
 </footer>
