@@ -94,16 +94,18 @@ will be <u style="color:red">no extensions for projects!</u></b>
 - Thursday: Coding Exam
 - Project 8: Prioity Queues and HaverQuest AI
 
-#### Week 13: Sets, Persistent Hash Tables, and the Hash Array-Mapped Trie
+#### Week 13: HAMT and Course Review
 
-- Tuesday: Representing Sets and Persistent Datastructures
-- Thursday: The Hash Array-Mapped Trie
+- Tuesday: The Hash Array-Mapped Trie
+  - [Keynote]({{ "/assets/slides/hamt.key" | absolute_url }})
+  - [PDF]({{ "/assets/slides/hamt.pdf" | absolute_url }})
+- Thursday: Course review (before final)
 
 #### Week 14: Coding up HAMT and AI Competition
 
-- Tuesday: Coding up HAMT
-- Thursday: AI Competition
+- Tuesday: Kris gone, work on Project 8
+- Thursday: In class party / AI competition
 
-#### Final Project
+#### Final
 
-- HaverQuest: The Game
+- Take home..
