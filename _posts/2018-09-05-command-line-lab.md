@@ -1,10 +1,10 @@
 ---
-title: "Lab 1: Using the Command Line"
+title: "Lab 0: Using the Command Line"
 layout: lab
 categories: assignment
 published: true
 due: 2018-09-10
-permalink: /labs/1
+permalink: /labs/0
 ---
 
 As a student of computing, you're going to have to spend a lot of time

@@ -64,7 +64,7 @@ will be <u style="color:red">no extensions for projects!</u></b>
   - [Keynote]({{ "/assets/slides/linked-list-intro.key" | absolute_url }})
   - [PDF]({{ "/assets/slides/linked-list-intro.pdf" | absolute_url }})
 - [Example code on Linked Lists](https://github.com/kmicinski/cs107-notes/blob/master/linked-list-lecture.py)
-
+- [Project 6: Linked Lists and Path Finding in HaverQuest](/labs/6)
 
 #### Week 9: Binary Trees
 
@@ -83,16 +83,18 @@ will be <u style="color:red">no extensions for projects!</u></b>
   - [Keynote]({{ "/assets/slides/hash-tables.key" | absolute_url }})
   - [PDF]({{ "/assets/slides/hash-tables.pdf" | absolute_url }})
 
-#### Week 11: Heaps and Binomial Heaps
+#### Week 11: Subclassing
 
-- Tuesday: Priority Queues and Heaps
-- Thursday: Binomial Heaps
+- Tuesday: Implementing Hash Tables
+- Thursday: Polymorphism
+  - [Keynote]({{ "/assets/slides/polymorphism.key" | absolute_url }})
+  - [PDF]({{ "/assets/slides/polymorphism.pdf" | absolute_url }})
+- [Project 7: Implementing Animation and Enemy AI](/labs/7)
 
-#### Week 12: Exam Review and Coding Exam / Exam 2
+#### Week 12: Thanksgiving and Coding Exam / Exam 2 (**No Class**)
 
 - Tuesday: Exam Review
 - Thursday: Coding Exam
-- Project 8: Prioity Queues and HaverQuest AI
 
 #### Week 13: HAMT and Course Review
 
